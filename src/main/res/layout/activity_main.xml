@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.MainActivity"
+    android:background="@drawable/back"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/title"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/iot"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="خانه هوشمند"
+            android:layout_marginTop="16dp"
+            android:textSize="32sp"
+            android:textColor="#fff"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:layout_below="@id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="by MAJID KAZEMI"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:id="@+id/by"
+        />
+
+    <LinearLayout
+        android:layout_below="@id/by"
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:layout_gravity="center"
+            android:background="@drawable/background_input"
+            android:layout_marginHorizontal="16dp"
+            android:id="@+id/lamp1">
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/lamp1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="لامپ 1"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:layout_gravity="center"
+            android:background="@drawable/background_input"
+            android:layout_marginHorizontal="16dp"
+            android:id="@+id/lamp2">
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/lamp1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="لامپ 2"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="32dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/voice"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:text="ورود"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:background="@drawable/voice"
+                android:elevation="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
